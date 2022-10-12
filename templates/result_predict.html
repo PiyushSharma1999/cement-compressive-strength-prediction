@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class = 'result_img'>
+    <h6> Download  result  here</h6>
+{% for filename in files%}
+
+<a href="{{url_for('download_file',filename = filename)}}"><img src = "static\download.jpg" alt = "Download now" width="175" height="175"> </a>
+
+{% endfor %}
+
+
+</div>
+{%endblock content%}
