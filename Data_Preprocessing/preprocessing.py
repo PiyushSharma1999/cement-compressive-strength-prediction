@@ -108,8 +108,5 @@ class Preprocessing:
         x_scaled = scalar.fit_transform(X)
         return x_scaled
     
-    def imbal_data_handling(self,X,y):
-        sample = SMOTE()
-        X,y = sample.fit_resample(X,y)
-        return X,y
+    
         
