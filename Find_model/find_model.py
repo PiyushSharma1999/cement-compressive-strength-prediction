@@ -16,11 +16,11 @@ class Find_Model:
         try:
             self.param_grid_rfr = {
                                 "n_estimators":[10,20,30],
-                                "max_features":["auto","sqrt","log2"],
+                                "max_features":["auto","sqrt","log2",None],
                                 "min_samples_split":[2,4,8],
                                 "bootstrap":[True,False]
                                 }
-            self.grid = GridSearchCV(self.random_forest_regressor,self.param_grid_rfr,verbose=3,cv=5)
+            self.grid = GridSearchCV(self.random_forest_regressor,self.param_grid_rfr,verbose=3,cv=5,n_jobs=-1)
             self.grid.fit(train_X,train_Y)
 
             # Extract best params
@@ -53,7 +53,7 @@ class Find_Model:
                                        "copy_X":[True,False] 
                                         }
             # Creating an object of the Grid Search class
-            self.grid = GridSearchCV(self.linear_reg,self.param_grid_linear,verbose=3,cv=5)
+            self.grid = GridSearchCV(self.linear_reg,self.param_grid_linear,verbose=3,cv=5,n_jobs=-1)
             # finding the best parameters
             self.grid.fit(train_X,train_Y)
 

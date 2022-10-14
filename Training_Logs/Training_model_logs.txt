@@ -272,3 +272,45 @@
 2022-10-10/22 55 06		Entered model_saving methods of File_Operation Class
 2022-10-10/22 55 06		Model FileRandomForestRegressor3 saved. Exited the model_Saving method of class File_Operation
 2022-10-10/22 55 06		Successful End of Model Training
+2022-10-14/15 20 02		Training started
+2022-10-14/15 20 02		Entered the get data method of Data_Getter class
+2022-10-14/15 20 03		Data loaded successfully. Exited the get_data method of the Data_Getter class
+2022-10-14/15 20 03		Entered the is_null_present method of the Preprocessing class
+2022-10-14/15 20 03		Successfully found missing values. Created separate dataframe for null values count. Exited null_values_presence method of class Preprocessing
+2022-10-14/15 20 03		Entered the separate_label_feature method of Preprocessing class
+2022-10-14/15 20 03		Feature separation successful. Exited the separate_label_feature method of Preprocessing class
+2022-10-14/15 20 03		Entered the elbow_plot method of the Clustering class
+2022-10-14/15 20 11		The optimum number of cluster is : 4. Exited te elbow_plot method of class Clustering
+2022-10-14/15 20 11		Entered the create_cluster method of class Clustering
+2022-10-14/15 20 12		Entered model_saving methods of File_Operation Class
+2022-10-14/15 20 13		Model FileKMeans_clustering saved. Exited the model_Saving method of class File_Operation
+2022-10-14/15 20 13		Successfully created cluster. Exited create_cluster method of class clustering
+2022-10-14/15 20 13		Entered the get_best_model method of the Find_Modle class
+2022-10-14/15 20 13		Entered get_best_params_for_random_regressor method of Find_Model class
+2022-10-14/15 20 23		RandomForestRegressor best params: {'bootstrap': True, 'max_features': 'auto', 'min_samples_split': 2, 'n_estimators': 10}. Exited the get_best_params_for_random_regressor method of Find_Model class
+2022-10-14/15 20 23		Entered the get_best_params_linear_regressor of Find_Model class
+2022-10-14/15 20 24		LinearRegression best params: {'copy_X': True, 'fit_intercept': True, 'normalize': True} .Exited the get_best_params_linear_regressor method of Find_Model class
+2022-10-14/15 20 24		Entered model_saving methods of File_Operation Class
+2022-10-14/15 20 24		Model FileRandomForestRegressor2 saved. Exited the model_Saving method of class File_Operation
+2022-10-14/15 20 24		Entered the get_best_model method of the Find_Modle class
+2022-10-14/15 20 24		Entered get_best_params_for_random_regressor method of Find_Model class
+2022-10-14/15 20 34		RandomForestRegressor best params: {'bootstrap': False, 'max_features': 'log2', 'min_samples_split': 2, 'n_estimators': 20}. Exited the get_best_params_for_random_regressor method of Find_Model class
+2022-10-14/15 20 34		Entered the get_best_params_linear_regressor of Find_Model class
+2022-10-14/15 20 35		LinearRegression best params: {'copy_X': True, 'fit_intercept': True, 'normalize': False} .Exited the get_best_params_linear_regressor method of Find_Model class
+2022-10-14/15 20 35		Entered model_saving methods of File_Operation Class
+2022-10-14/15 20 35		Model FileRandomForestRegressor1 saved. Exited the model_Saving method of class File_Operation
+2022-10-14/15 20 35		Entered the get_best_model method of the Find_Modle class
+2022-10-14/15 20 35		Entered get_best_params_for_random_regressor method of Find_Model class
+2022-10-14/15 20 44		RandomForestRegressor best params: {'bootstrap': True, 'max_features': 'auto', 'min_samples_split': 2, 'n_estimators': 20}. Exited the get_best_params_for_random_regressor method of Find_Model class
+2022-10-14/15 20 44		Entered the get_best_params_linear_regressor of Find_Model class
+2022-10-14/15 20 45		LinearRegression best params: {'copy_X': True, 'fit_intercept': True, 'normalize': True} .Exited the get_best_params_linear_regressor method of Find_Model class
+2022-10-14/15 20 45		Entered model_saving methods of File_Operation Class
+2022-10-14/15 20 45		Model FileLinearRegression0 saved. Exited the model_Saving method of class File_Operation
+2022-10-14/15 20 45		Entered the get_best_model method of the Find_Modle class
+2022-10-14/15 20 45		Entered get_best_params_for_random_regressor method of Find_Model class
+2022-10-14/15 20 56		RandomForestRegressor best params: {'bootstrap': False, 'max_features': 'log2', 'min_samples_split': 2, 'n_estimators': 30}. Exited the get_best_params_for_random_regressor method of Find_Model class
+2022-10-14/15 20 56		Entered the get_best_params_linear_regressor of Find_Model class
+2022-10-14/15 20 56		LinearRegression best params: {'copy_X': True, 'fit_intercept': True, 'normalize': False} .Exited the get_best_params_linear_regressor method of Find_Model class
+2022-10-14/15 20 56		Entered model_saving methods of File_Operation Class
+2022-10-14/15 20 56		Model FileRandomForestRegressor3 saved. Exited the model_Saving method of class File_Operation
+2022-10-14/15 20 56		Successful End of Model Training
