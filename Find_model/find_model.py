@@ -17,7 +17,7 @@ class Find_Model:
             self.param_grid_rfr = {
                                 "n_estimators":[10,20,30],
                                 "max_features":["auto","sqrt","log2"],
-                                "min_samples_split":[2,4,8],
+                                #"min_samples_split":[2,4,8],
                                 "bootstrap":[True,False]
                                 }
             self.grid = GridSearchCV(self.random_forest_regressor,self.param_grid_rfr,verbose=3,cv=5,n_jobs=-1)
@@ -26,13 +26,13 @@ class Find_Model:
             # Extract best params
             self.n_estimators = self.grid.best_params_["n_estimators"]
             self.max_features = self.grid.best_params_["max_features"]
-            self.min_samples_split = self.grid.best_params_["min_samples_split"]
+            #self.min_samples_split = self.grid.best_params_["min_samples_split"]
             self.bootstrap = self.grid.best_params_["bootstrap"]
 
             # Creating new model with best params
             self.rfregrssor = RandomForestRegressor(n_estimators=self.n_estimators,
                                                     max_features=self.max_features,
-                                                    min_samples_split=self.min_samples_split,
+                                                    min_samples_split=2,
                                                     bootstrap=self.bootstrap)
         
             # Training new model
