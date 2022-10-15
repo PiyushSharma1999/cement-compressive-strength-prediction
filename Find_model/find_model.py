@@ -25,13 +25,11 @@ class Find_Model:
 
             # Extract best params
             self.n_estimators = self.grid.best_params_["n_estimators"]
-            self.max_features = self.grid.best_params_["max_features"]
-            #self.min_samples_split = self.grid.best_params_["min_samples_split"]
+            self.min_samples_split = self.grid.best_params_["min_samples_split"]
             self.bootstrap = self.grid.best_params_["bootstrap"]
 
             # Creating new model with best params
             self.rfregrssor = RandomForestRegressor(n_estimators=self.n_estimators,
-                                                    max_features=self.max_features,
                                                     min_samples_split=2,
                                                     bootstrap=self.bootstrap)
         
