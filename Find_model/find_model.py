@@ -16,7 +16,7 @@ class Find_Model:
         try:
             self.param_grid_rfr = {
                                 "n_estimators":[10,20,30],
-                                "max_features":["auto","sqrt","log2"],
+                                #"max_features":["auto","sqrt","log2"],
                                 #"min_samples_split":[2,4,8],
                                 "bootstrap":[True,False]
                                 }
